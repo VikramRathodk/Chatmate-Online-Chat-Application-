@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/main_logo"
+            app:srcCompat="@drawable/ic__0830632741582956833" />
+
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/email_phone"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"/>
+
+
+
+
+        <EditText
+
+            android:id="@+id/UserPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="9dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black">
+
+
+        </EditText>
+
+
+
+        <TextView
+            android:id="@+id/logged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="@string/already_have_account"
+            android:textColor="#090909" />
+
+        <Button
+            android:id="@+id/signBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/sign"
+            android:padding="10dp"
+            android:text="@string/sign_up" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/google_btn"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="@color/google"
+                android:drawableLeft="@drawable/googleg_standard_color_18"
+                android:drawablePadding="2dp"
+                android:padding="8dp"
+                android:text="@string/google"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:cornerRadius="9dp"  />
+
+            <Button
+                android:id="@+id/facebook_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="2dp"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="2dp"
+                android:padding="6dp"
+
+                android:backgroundTint="@color/fbblue"
+                android:drawableLeft="@drawable/ic_iconfb"
+                android:text="@string/facebook"
+
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="9dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

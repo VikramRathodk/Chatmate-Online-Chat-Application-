@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "425051683603",
+    "project_id": "chatmatess",
+    "storage_bucket": "chatmatess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425051683603:android:a888d06b51199a79ba38e6",
+        "android_client_info": {
+          "package_name": "com.vr233149gmail.chatmates"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425051683603-eh0ure0lm2cf5a9rlm2rns13ab56r01l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg89gJE7oqjRZpUSUXzwdMjjoZsAkODYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425051683603-eh0ure0lm2cf5a9rlm2rns13ab56r01l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

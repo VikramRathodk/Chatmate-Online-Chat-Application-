@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">chatmates</string>
+    <string name="main_logo">main logo</string>
+    <string name="name">Name</string>
+    <string name="email_phone">Email/Phone</string>
+    <string name="password">Password</string>
+    <string name="already_have_account">Already have account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="sing_in">sign_in</string>
+    <string name="create_a_new_account">Create a new Account</string>
+    <string name="setimage">setImage</string>
+    <string name="chatmates">Chatmates</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+</resources>
