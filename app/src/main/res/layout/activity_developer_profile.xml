@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:context=".Activities.DeveloperProfile">
+
+        <!--profile layout-->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/bgLogin">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:title="@string/profile"
+                app:titleTextColor="@color/white">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="25dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center">
+
+                    <com.ortiz.touchview.TouchImageView
+                        android:id="@+id/profileImage1"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/vikram"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/profileImage2"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/ram"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/profileImage1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/DisplayName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profileImage2"
+                        android:layout_marginTop="24dp"
+                        android:text="Vikram Rathod"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="@+id/profileImage1"
+                        app:layout_constraintStart_toStartOf="@+id/profileImage1"
+
+                        app:layout_constraintTop_toBottomOf="@+id/profileImage1" />
+
+                    <TextView
+                        android:id="@+id/DisplayName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profileImage2"
+                        android:layout_marginTop="24dp"
+                        android:text="Ram Sonar"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="@id/profileImage2"
+                        app:layout_constraintHorizontal_bias="0.594"
+                        app:layout_constraintStart_toStartOf="@+id/profileImage2"
+                        app:layout_constraintTop_toBottomOf="@+id/profileImage2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DisplayName1"
+                        android:layout_marginBottom="64dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/DisplayName1"
+                        app:layout_constraintHorizontal_bias="0.388"
+                        app:layout_constraintStart_toStartOf="@+id/DisplayName1">
+
+                        <ImageView
+                            android:id="@+id/githubVik"
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/github" />
+
+                        <ImageView
+                            android:id="@+id/linkedinVik"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="25dp"
+                            android:src="@drawable/linkedin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/DisplayName1"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="64dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/DisplayName2"
+                        app:layout_constraintHorizontal_bias="0.47"
+                        app:layout_constraintStart_toStartOf="@+id/DisplayName2">
+
+                        <ImageView
+                            android:id="@+id/githubRam"
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/github" />
+
+                        <ImageView
+                            android:id="@+id/linkedinRam"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="25dp"
+                            android:src="@drawable/linkedin" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="25dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center">
+
+
+                    <TextView
+                        android:id="@+id/aboutMe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="About Us"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/aboutMe"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="hey there is a demo to show how to show ope you like it. "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/aboutMe" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <!--contact details-->
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout2"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+
+            >
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="100dp"-->
+            <!--                android:layout_marginStart="10dp"-->
+            <!--                android:layout_marginEnd="10dp"-->
+            <!--                app:cardCornerRadius="25dp">-->
+
+            <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/contact"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_alignParentTop="true"-->
+            <!--                        android:layout_marginTop="10dp"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="Contact"-->
+            <!--                        android:textSize="18sp"-->
+            <!--                        android:textStyle="bold|italic"-->
+            <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                        app:layout_constraintStart_toStartOf="parent"-->
+            <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--                    <LinearLayout-->
+
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        android:layout_marginTop="25dp"-->
+
+            <!--                        android:gravity="center_vertical"-->
+            <!--                        app:layout_constraintTop_toBottomOf="@id/contact">-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/facebookBtn"-->
+            <!--                            android:layout_width="30dp"-->
+            <!--                            android:layout_height="30dp"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:src="@drawable/facebook" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/github1"-->
+
+            <!--                            android:layout_width="30dp"-->
+            <!--                            android:layout_height="30dp"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:src="@drawable/github" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/linkedin2"-->
+            <!--                            android:layout_width="30dp"-->
+            <!--                            android:layout_height="30dp"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:src="@drawable/linkedin" />-->
+
+            <!--                        <ImageView-->
+            <!--                            android:id="@+id/instagram"-->
+
+            <!--                            android:layout_width="30dp"-->
+            <!--                            android:layout_height="30dp"-->
+            <!--                            android:layout_weight="1"-->
+            <!--                            android:src="@drawable/instagram" />-->
+            <!--                    </LinearLayout>-->
+
+            <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <!--            </androidx.cardview.widget.CardView>-->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativelayout"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="25dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/Skills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/skills"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.501"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/java"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Skills"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/java_developement"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/Skills"
+                        app:layout_constraintStart_toStartOf="@+id/Skills"
+                        app:layout_constraintTop_toBottomOf="@+id/Skills" />
+
+                    <TextView
+                        android:id="@+id/android"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/java"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/android_developement"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/webDev"
+                        app:layout_constraintStart_toStartOf="@+id/webDev" />
+
+                    <TextView
+                        android:id="@+id/webDev"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/android"
+                        android:text="@string/web_developement"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/android"
+                        app:layout_constraintEnd_toEndOf="@+id/java"
+                        app:layout_constraintStart_toStartOf="@+id/java"
+                        app:layout_constraintTop_toBottomOf="@+id/java" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

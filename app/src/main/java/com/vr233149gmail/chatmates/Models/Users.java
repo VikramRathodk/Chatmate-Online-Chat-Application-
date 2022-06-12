@@ -1,7 +1,8 @@
 package com.vr233149gmail.chatmates.Models;
 
-public class Users {
-    String profilePic,userName,mail,password,userId,lastMessage;
+
+public class Users{
+      private String profilePic,userName,mail,password,userId,lastMessage,status;
 
     public Users(String profilePic, String userName, String mail, String password, String userId, String lastMessage) {
         this.profilePic = profilePic;
@@ -9,11 +10,13 @@ public class Users {
         this.mail = mail;
         this.password = password;
         this.userId = userId;
-        this.lastMessage = lastMessage;
+        this.lastMessage = lastMessage
+        ;
 
     }
 
-    public Users() { }
+    public Users(){}
+
 
     public Users(String userName, String mail, String password) {
         this.userName = userName;
@@ -21,7 +24,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getProfilePic() {
+    public  String getProfilePic() {
         return profilePic;
     }
 
@@ -68,4 +71,16 @@ public class Users {
     public void setLastMessage(String lastMessage) {
         this.lastMessage = lastMessage;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+
+
 }
+

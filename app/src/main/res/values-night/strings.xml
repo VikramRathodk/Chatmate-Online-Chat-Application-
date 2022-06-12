@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="message_send">message send</string>
+    <string name="sign_up_with_phone">Sign Up with Phone</string>
+    <string name="add_new">Add new</string>
+    <string name="to_got_main_activity">To got main activity</string>
+    <string name="vikram">Vikram</string>
+    <string name="developer_profile">Developer Profile</string>
+    <string name="forgot_password">Forgot Password ?</string>
+</resources>

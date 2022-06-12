@@ -1,0 +1,38 @@
+
+
+
+
+problem 1 : <Sample_sender and Reciever me dakkat hai>              : solved
+
+//Tasks to complete::
+    Developer profile                                               :done
+    User profile                                                    :done
+   Runtime permissions                                              :solved
+   Delete receivers messages image and pdf                          :  half solved
+   searching                                                        :solved
+   sorting data by username                                         :solved
+   sorting data by timestamp                                        :not yet
+   notification                                                     :half task done
+   privacy policy                                                   :done
+   terms and condition                                              :done
+
+
+binding.forgotPass.setOnClickListener(view1 -> {
+            Log.d(TAG, "ForgotPassword: Not getting forgot details");
+            final EditText resetMail = new EditText(LoginPage.this);
+            Log.d(TAG, "ForgotPassword: " + resetMail);
+            new MaterialAlertDialogBuilder(LoginPage.this)
+                    .setMessage("Enter Your Email to Change Password")
+                    .setTitle("Reset Password ? ")
+                    .setView(resetMail)
+                    .setPositiveButton("Yes", (dialogInterface, i) -> {
+                        String mail = resetMail.getText().toString();
+                        auth.sendPasswordResetEmail(mail).addOnSuccessListener(unused ->
+                                        Toast.makeText(LoginPage.this, "Reset link sent to Your Email ", Toast.LENGTH_SHORT).show())
+                                .addOnFailureListener(e ->
+                                        Toast.makeText(LoginPage.this, "Reset link is not sent " + e.getMessage(),
+                                                Toast.LENGTH_SHORT).show());
+
+                    }).setNegativeButton("No", (dialogInterface, i) ->
+                            dialogInterface.dismiss());
+        });

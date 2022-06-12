@@ -7,12 +7,47 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="whitee">#FAE8E8</color>
 
-    //colors by me
-    <color name="blue">#010832</color>
-    <color name="sign">#3DA613</color>
+<!--    //colors by me-->
+<!--    <color name="blue">#091D98</color>-->
+    <color name="green">#99B511</color>
     <color name="google">#FFFFFF</color>
-    <color name="fbblue">#4267B2</color>
+
+    <color name="cardViewColor">#AED7F7</color>
+    <color name="bgSendBubble">#FBEFE5</color>
+    <color name="bgSendBubble2">#F4C66A</color>
+
+    <color name="bgRevBubble">#D0F1F6</color>
+    <color name="chatToolbarColor">#D4CCFA</color>
+
+    <color name="chatBgRecycler">#F6BEBE</color>
+    <color name="bgLogin">#69BCFD</color>
+    <color name="save">#F4A890</color>
+    <color name="blue">#409FEB</color>
+
+    <color name="lightblue">#83BFEF</color>
+    <color name="yellow">#F57F17</color>
+    <color name="light_yellow">#EFB683</color>
+    <color name="appBlue">#DD99BAEF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="shimmer_color">#BFBDBD</color>
+
+
+
+
+
+
+<!--    <color name="fbblue">#4267B2</color>-->
+
+
+
+
 
 
 

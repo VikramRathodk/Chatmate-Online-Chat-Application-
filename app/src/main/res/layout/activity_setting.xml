@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Activities.Setting">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/blue">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:titleTextColor="@color/white">
+
+            <ImageView
+                android:id="@+id/backArrow2"
+                android:layout_width="47dp"
+                android:layout_height="27dp"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_profile"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/appbarSetting"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="25dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="180dp"
+                    android:layout_height="194dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/circle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/plus"-->
+                <!--                    android:layout_width="68dp"-->
+                <!--                    android:layout_height="56dp"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:src="@drawable/plus1"-->
+                <!--                    app:layout_constraintEnd_toEndOf="@+id/profile_image"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.909"-->
+                <!--                    app:layout_constraintStart_toStartOf="@+id/profile_image"-->
+                <!--                    tools:ignore="MissingConstraints"-->
+                <!--                    tools:layout_editor_absoluteY="138dp" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:layout_constraintEnd_toEndOf="@id/profile_image"
+                    app:layout_constraintStart_toStartOf="@id/profile_image"
+                    app:layout_constraintTop_toBottomOf="@id/profile_image">
+
+                    <EditText
+                        android:id="@+id/userNames"
+                        android:layout_width="match_parent"
+                        android:minLines="2"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+
+                        android:hint="Enter Your Name here"
+                        android:textStyle="bold">
+
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutt"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="26dp"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:hint="Email Address"
+                android:editable="false"
+
+                android:maxLines="2"
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="26dp"
+            android:layout_below="@id/emailLayout"
+            android:background="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:maxLines="2"
+                android:background="@color/white"
+                android:hint="Enter Your Status here"
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativelayoutt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:onClick="SaveData"
+        android:text="@string/update_details"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:cornerRadius="15dp"
+        tools:ignore="UsingOnClickInXml" />
+
+
+</RelativeLayout>

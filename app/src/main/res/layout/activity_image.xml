@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    tools:context=".Activities.ImageActivity">
+
+
+    <ImageView
+        android:id="@+id/fullImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/user">
+
+    </ImageView>
+
+
+</FrameLayout>
